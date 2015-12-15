@@ -1,0 +1,30 @@
+{
+    "name": "devhelp/piwik-silex-provider-sandbox",
+    "keywords": ["piwik"],
+    "homepage": "http://devhelp.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Barański",
+            "email": "pawel.baranski1@gmail.com"
+        },
+        {
+            "name":  "devhelp.pl",
+            "email": "devhelp@devhelp.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "silex/silex": "~1",
+        "devhelp/piwik-silex-provider": "dev-master",
+        "devhelp/piwik-api-guzzle": "dev-master"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devhelp\\Silex\\Sandbox\\Piwik\\": "src/"
+        }
+    }
+}
